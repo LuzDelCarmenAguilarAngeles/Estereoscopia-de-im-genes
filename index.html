@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Estereoscópico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/TecNM_logo.png" alt="Logo Izquierdo" class="logo-left">
+            <span class="header-text"><h3>   3.2 Estereoscopia de imágenes</h3></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#personal1">Personal</a></li>
+                <li><a href="#personal2">Infraestructura</a></li>
+                <li><a href="#personal3">Objetos</a></li>
+            </ul>
+        </nav>
+        <img src="images/LITP.png" alt="Logo Derecho" class="logo-right">
+    </header>
+    
+
+    <main>
+        <!-- Bloque Personal 1 -->
+        <section id="personal1">
+            <div class="section-title">
+                <h2>Imágenes Estereoscópicas - Personal</h2>
+            </div>
+            <div id="carousel-text1" class="carousel-text">Foco cercano</div>
+            <div class="carousel">
+                <div class="carousel-images" id="carousel1">
+                    <img src="images/me foco cercano.JPG" alt="Anaglifo Personal 1">
+                    <img src="images/me foco medio.JPG" alt="Anaglifo Personal 2">
+                    <img src="images/me foco lejanoJPG.JPG" alt="Anaglifo Personal 3">
+                </div>
+                <button class="carousel-btn prev-btn" onclick="changeSlide(-1, 1)">&#10094;</button>
+                <button class="carousel-btn next-btn" onclick="changeSlide(1, 1)">&#10095;</button>
+            </div>
+            <div class="stereo">
+                <img src="images/me2.JPG" alt="Left Image">
+            </div>
+        </section><br><br>
+
+        <!-- Bloque Infraestructura -->
+        <section id="personal2">
+            <div class="section-title">
+                <h2>Imágenes Estereoscópicas - Infraestructura de Edificios</h2>
+            </div>
+            <div id="carousel-text2" class="carousel-text">Foco cercano</div>
+            <div class="carousel">
+                <div class="carousel-images" id="carousel2">
+                    <img src="images/edificio foco cercano.JPG" alt="Anaglifo Personal 1">
+                    <img src="images/edificio foco medio.JPG" alt="Anaglifo Personal 2">
+                    <img src="images/edificio foco lejano.JPG" alt="Anaglifo Personal 3">
+                </div>
+                <button class="carousel-btn prev-btn" onclick="changeSlide(-1, 2)">&#10094;</button>
+                <button class="carousel-btn next-btn" onclick="changeSlide(1, 2)">&#10095;</button>
+            </div>
+            <div class="stereo">
+                <img src="images/edificio1lr.JPG" alt="Left Image">
+            </div>
+        </section><br><br>
+
+        <!-- Bloque Objetos -->
+        <section id="personal3">
+            <div class="section-title">
+                <h2>Imágenes Estereoscópicas - Objetos</h2>
+            </div>
+            <div id="carousel-text3" class="carousel-text">Foco cercano</div>
+            <div class="carousel">
+                <div class="carousel-images" id="carousel3">
+                    <img src="images/palmera foco cercano.JPG" alt="Anaglifo Personal 1">
+                    <img src="images/palmera foco medio.JPG" alt="Anaglifo Personal 2">
+                    <img src="images/palmera foco lejano.JPG" alt="Anaglifo Personal 3">
+                </div>
+                <button class="carousel-btn prev-btn" onclick="changeSlide(-1, 3)">&#10094;</button>
+                <button class="carousel-btn next-btn" onclick="changeSlide(1, 3)">&#10095;</button>
+            </div>
+            <div class="stereo">
+                <img src="images/palmera1lr.JPG" alt="Left Image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Luz Aguilar. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
